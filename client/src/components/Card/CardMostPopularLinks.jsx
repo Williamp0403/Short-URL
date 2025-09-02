@@ -21,12 +21,12 @@ export function CardMostPopularLinks({ links }) {
           </div>
           <div>
             <a
-              href={import.meta.env.VITE_BACKEND_URL + '/' + link.short_url}
+              href={import.meta.env.VITE_BACKEND_URL + link.short_url}
               className="text-base sm:text-lg hover:underline"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {import.meta.env.VITE_BACKEND_URL + '/' +link.short_url}
+              {import.meta.env.VITE_BACKEND_URL + link.short_url}
             </a>
             <div className="flex items-center gap-1 text-zinc-300 font-medium">
               <AdsClick fontSize="small" />

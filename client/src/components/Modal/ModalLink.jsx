@@ -10,7 +10,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 export function ModalLink ({ open, setOpen, link = '' }) {
 
-  const short_url = `${import.meta.env.VITE_BACKEND_URL + '/' + link}`
+  const short_url = `${import.meta.env.VITE_BACKEND_URL + link}`
 
   return (
     <Dialog

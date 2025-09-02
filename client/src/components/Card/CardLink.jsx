@@ -5,7 +5,7 @@ import { Dropdown } from "../Dropdown"
 
 export function CardLink ({ link }) {
   
-  const shortUrl = `${import.meta.env.VITE_BACKEND_URL + '/' + link.short_url}`
+  const shortUrl = `${import.meta.env.VITE_BACKEND_URL + link.short_url}`
 
   return (
     <div className="flex flex-col gap-3 p-4 border border-zinc-600 rounded-md">

@@ -20,12 +20,12 @@ export function CardBasic({ title, description, icon: Icon, color }) {
         <h2>No hay enlaces creados</h2>    
       : typeof title === 'object' ?
         <a
-            href={import.meta.env.VITE_BACKEND_URL + '/' + title.short_url}
+            href={import.meta.env.VITE_BACKEND_URL + title.short_url}
             className="text-base sm:text-lg hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
-          {import.meta.env.VITE_BACKEND_URL + '/' + title.short_url}
+          {import.meta.env.VITE_BACKEND_URL + title.short_url}
         </a>
       : <h2 className={`${color === 'orange' ? 'text-base' : 'text-2xl sm:text-3xl'} font-bold`}>
         {title}

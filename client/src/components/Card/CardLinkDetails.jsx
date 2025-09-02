@@ -13,11 +13,11 @@ export function CardLinkDetails ({ link }) {
       <li className="text-base sm:text-lg text-zinc-300">
         <strong>Enlace corto: </strong>
         <a   
-          href={import.meta.env.VITE_BACKEND_URL + '/' + short_url} 
+          href={import.meta.env.VITE_BACKEND_URL + short_url} 
           target="_blank" 
           rel="noopener noreferrer"
           className="text-base sm:text-lg hover:underline">
-          {import.meta.env.VITE_BACKEND_URL + '/' + short_url}
+          {import.meta.env.VITE_BACKEND_URL + short_url}
         </a>
       </li>
       <li className="text-base sm:text-lg text-zinc-300 truncate"><strong>Enlace original: </strong>{long_url}</li>

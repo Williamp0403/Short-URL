@@ -14,7 +14,7 @@ export function HomePage () {
   const { mutate, isPending } = useMutation({
     mutationFn: createLink,
     onSuccess: (link) => {
-      setShortUrl(import.meta.env.VITE_BACKEND_URL + '/' + link.short_url);
+      setShortUrl(import.meta.env.VITE_BACKEND_URL + link.short_url);
     }
   })
   const [shortUrl, setShortUrl] = useState(null)
