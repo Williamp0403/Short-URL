@@ -1,14 +1,11 @@
+import dotenv from 'dotenv'
+dotenv.config()
 import express from 'express'
 import morgan from 'morgan'
 import cors from 'cors'
 import cookieParser from 'cookie-parser';
 import RouteLink from './routes/link.route.js'
 import RouteAuth from './routes/auth.route.js'
-
-if (process.env.NODE_ENV !== 'production') {
-  console.log(process.env.NODE_ENV)
-  process.loadEnvFile()
-}
 
 const app = express()
 const PORT = process.env.PORT ?? 3003

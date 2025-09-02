@@ -1,8 +1,8 @@
+import dotenv from 'dotenv'
+dotenv.config()
 import { sql } from "../config/db.js"
 import jwt from "jsonwebtoken"
 import bcrypt from 'bcrypt'
-
-process.loadEnvFile()
 
 export class ModelAuth {
   static async requestRegister (data) {
