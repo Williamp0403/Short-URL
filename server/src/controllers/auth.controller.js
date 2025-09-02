@@ -1,7 +1,7 @@
+import dotenv from 'dotenv'
+dotenv.config()
 import { ModelAuth } from "../models/auth.model.js"
 import jwt from 'jsonwebtoken'
-
-process.loadEnvFile
 
 export class ControllerAuth {
   static async register (req, res) {
